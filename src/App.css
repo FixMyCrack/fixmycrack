@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+ 
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  font-size: calc(1rem + 5vw);
+  word-spacing: 0px;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+img {
+    display: inline;
+    width: auto;
+    height: 1em;
+    padding-left: calc(0.3rem + 0.6vw);
+}
+
+
+form {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    padding-top: 30px;
+}
+
+input, select {
+  border: 1px solid #ccc;
+  font-size: 20px; /* fallback */
+  padding: 15px;
+  width: 100%; /* fallback */
+  
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 0 3px 0;
+}
+
+form div {
+  margin: 0 0 20px 0;
+}
+
+
+button {
+  background-color: #eee;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+  color: #444;
+  cursor: pointer;
+  display: block;
+  font-size: 22px; /* fallback */
+  font-size: var(--mobile-font-size);
+  font-weight: 500;
+  margin: 3px 0 0 0;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+
+
+.consent , .refer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  align-items: top;
 }
 
-.App-link {
-  color: #61dafb;
+
+.consent label {
+  flex: 0 0 95%;
+  min-width: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.consent input {
+  flex: 0 0 5%;
+  min-width: 0;
+  margin: 0;
+  
+}
+
+.refer label {
+  flex: 0 0 60%;
+  align-self: center;
 }
